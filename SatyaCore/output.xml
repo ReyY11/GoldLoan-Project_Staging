@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.12.0 on win32)" generated="20231025 16:48:16.227" rpa="false">
+<suite id="s1" name="SatyaCore" source="C:\Users\rahul.yadav\Workspace1\SatyaCore">
+<suite id="s1-s1" name="ExcelTest" source="C:\Users\rahul.yadav\Workspace1\SatyaCore\ExcelTest">
+<suite id="s1-s1-s1" name="LoginTest" source="C:\Users\rahul.yadav\Workspace1\SatyaCore\ExcelTest\LoginTest.robot">
+<test id="s1-s1-s1-t1" name="ValidTest">
+<kw name="Read Excel">
+<arguments>
+<arg>C:\\Users\\rahul.yadav\\Workspace1\\SatyaCore\\ExcelTest${/}..\\Data\\Data.xls</arg>
+<arg>Login</arg>
+<arg>2</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${username}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>doc_id</arg>
+</arguments>
+<msg timestamp="20231025 16:48:16.491" level="FAIL">InvalidFileException: openpyxl does not support the old .xls file format, please use xlrd to read this file, or convert it to the more recent .xlsx file format.</msg>
+<status status="FAIL" starttime="20231025 16:48:16.489" endtime="20231025 16:48:16.492"></status>
+</kw>
+<status status="FAIL" starttime="20231025 16:48:16.488" endtime="20231025 16:48:16.492"></status>
+</kw>
+<status status="FAIL" starttime="20231025 16:48:16.487" endtime="20231025 16:48:16.492" critical="yes">InvalidFileException: openpyxl does not support the old .xls file format, please use xlrd to read this file, or convert it to the more recent .xlsx file format.</status>
+</test>
+<test id="s1-s1-s1-t2" name="InvalidTest">
+<kw name="Read Excel">
+<arguments>
+<arg>C:\\Users\\rahul.yadav\\Workspace1\\SatyaCore\\ExcelTest${/}..\\Data\\Data.xls</arg>
+<arg>Login</arg>
+<arg>3</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${username}</var>
+</assign>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<doc>Opens xlsx document file.</doc>
+<arguments>
+<arg>${filepath}</arg>
+<arg>doc_id</arg>
+</arguments>
+<msg timestamp="20231025 16:48:16.495" level="FAIL">InvalidFileException: openpyxl does not support the old .xls file format, please use xlrd to read this file, or convert it to the more recent .xlsx file format.</msg>
+<status status="FAIL" starttime="20231025 16:48:16.494" endtime="20231025 16:48:16.495"></status>
+</kw>
+<status status="FAIL" starttime="20231025 16:48:16.493" endtime="20231025 16:48:16.496"></status>
+</kw>
+<status status="FAIL" starttime="20231025 16:48:16.493" endtime="20231025 16:48:16.496" critical="yes">InvalidFileException: openpyxl does not support the old .xls file format, please use xlrd to read this file, or convert it to the more recent .xlsx file format.</status>
+</test>
+<status status="FAIL" starttime="20231025 16:48:16.278" endtime="20231025 16:48:16.496"></status>
+</suite>
+<status status="FAIL" starttime="20231025 16:48:16.275" endtime="20231025 16:48:16.498"></status>
+</suite>
+<status status="FAIL" starttime="20231025 16:48:16.259" endtime="20231025 16:48:16.499"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2">Critical Tests</stat>
+<stat pass="0" fail="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" id="s1" name="SatyaCore">SatyaCore</stat>
+<stat pass="0" fail="2" id="s1-s1" name="ExcelTest">SatyaCore.ExcelTest</stat>
+<stat pass="0" fail="2" id="s1-s1-s1" name="LoginTest">SatyaCore.ExcelTest.LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
